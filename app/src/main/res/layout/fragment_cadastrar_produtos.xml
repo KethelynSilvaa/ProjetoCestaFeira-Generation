@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CadastrarProdutosFragment"
+    android:id="@+id/frameLayout2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/text_adicionar"
+                android:layout_width="194dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/text_adicionar_produto"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/btn_voltar"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/text_adicionar"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_voltar"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/input_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/adicionar_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_adicionar"
+                app:srcCompat="@drawable/input_img"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/txt_nome_produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_nome_produto"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_img"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/input_img"
+                app:layout_constraintTop_toBottomOf="@+id/input_img" />
+
+            <EditText
+                android:id="@+id/input_produto"
+                android:layout_width="325dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/input_produto"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:textColor="#000000"
+                android:textColorHint="#546E7A"
+                app:layout_constraintEnd_toEndOf="@+id/txt_nome_produto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_nome_produto"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nome_produto" />
+
+            <TextView
+                android:id="@+id/txt_catalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_categoria"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_produto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/input_produto"
+                app:layout_constraintTop_toBottomOf="@+id/input_produto" />
+
+            <Spinner
+                android:id="@+id/input_categoria"
+                android:layout_width="325dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text"
+                android:elevation="10dp"
+                android:theme="@style/Spinner"
+                app:layout_constraintEnd_toEndOf="@+id/txt_catalogo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_catalogo"
+                app:layout_constraintTop_toBottomOf="@+id/txt_catalogo"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/txt_peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_peso"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_categoria"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/input_categoria"
+                app:layout_constraintTop_toBottomOf="@+id/input_categoria" />
+
+            <EditText
+                android:id="@+id/input_peso"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_text"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/input_peso"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="15sp"
+                android:textColor="#000000"
+                android:textColorHint="#78909C"
+                app:layout_constraintEnd_toEndOf="@+id/txt_peso"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_peso"
+                app:layout_constraintTop_toBottomOf="@+id/txt_peso" />
+
+            <TextView
+                android:id="@+id/txt_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_valor"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_categoria"
+                app:layout_constraintHorizontal_bias="0.605"
+                app:layout_constraintStart_toStartOf="@+id/input_categoria"
+                app:layout_constraintTop_toBottomOf="@+id/input_categoria" />
+
+            <EditText
+                android:id="@+id/input_valor"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_text"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/input_valor"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="15sp"
+                android:textColor="#000000"
+                android:textColorHint="#78909C"
+                app:layout_constraintStart_toStartOf="@+id/txt_valor"
+                app:layout_constraintTop_toBottomOf="@+id/txt_valor"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txt_descri_produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_descricao_produto"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_peso"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/input_peso"
+                app:layout_constraintTop_toBottomOf="@+id/input_peso" />
+
+            <EditText
+                android:id="@+id/input_descricao"
+                android:layout_width="325dp"
+                android:layout_height="146dp"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_text"
+                android:elegantTextHeight="false"
+                android:elevation="10dp"
+                android:freezesText="false"
+                android:gravity="start"
+                android:hint="@string/input_descricao"
+                android:inputType="textMultiLine|textAutoComplete"
+                android:paddingStart="15sp"
+                android:paddingTop="25dp"
+                android:textColor="#000000"
+                android:textColorHint="#546E7A"
+                app:layout_constraintEnd_toEndOf="@+id/txt_descri_produto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_descri_produto"
+                app:layout_constraintTop_toBottomOf="@+id/txt_descri_produto"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/txt_organico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_organico"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/input_descricao"
+                app:layout_constraintTop_toBottomOf="@+id/input_descricao" />
+
+            <Switch
+                android:id="@+id/input_organico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:thumbTint="#FFFFFF"
+                android:trackTint="#10B017"
+                app:layout_constraintEnd_toEndOf="@+id/txt_organico"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_organico"
+                app:layout_constraintTop_toBottomOf="@+id/txt_organico"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Button
+                android:id="@+id/btn_adicionar_produto"
+                android:layout_width="230dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="144dp"
+                android:backgroundTint="#116EBE"
+                android:elevation="10dp"
+                android:text="@string/bnt_adicionar_produto"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/input_descricao"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/input_descricao"
+                app:layout_constraintTop_toBottomOf="@+id/input_descricao" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listagemProdutosFragment">
+
+    <fragment
+        android:id="@+id/listagemProdutosFragment"
+        android:name="paulo.antonio.task04.ListagemProdutosFragment"
+        android:label="fragment_listagem_produtos"
+        tools:layout="@layout/fragment_listagem_produtos" >
+        <action
+            android:id="@+id/action_listagemProdutosFragment_to_cadastrarProdutosFragment"
+            app:destination="@id/cadastrarProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarProdutosFragment"
+        android:name="paulo.antonio.task04.CadastrarProdutosFragment"
+        android:label="fragment_cadastrar_produtos"
+        tools:layout="@layout/fragment_cadastrar_produtos" >
+        <action
+            android:id="@+id/action_cadastrarProdutosFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment"
+            app:popUpTo="@id/listagemProdutosFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

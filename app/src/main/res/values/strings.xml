@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Cesta Feira</string>
+    <string name="tela_inicial">Tela Inicial</string>
+    <string name="tela_cad_produto">Cadastrar produto</string>
+    <string name="text_adicionar_produto">Adicionar produto</string>
+    <string name="btn_voltar" />
+    <string name="adicionar_img" />
+    <string name="text_nome_produto">Nome do Produto</string>
+    <string name="input_produto">Ex: Laranja</string>
+    <string name="text_categoria">Categoria</string>
+    <string-array name="input_categoria">
+        <item>Legumes</item>
+        <item>Verdura</item>
+        <item>Fruta</item>
+    </string-array>
+    <string-array name="pesquisar_enderecos">
+        <item>Rua Libero Badaró, 123</item>
+        <item>Rua Rocha Camargo, 109</item>
+        <item>Rua Avenida 9 de Julho, 1198</item>
+    </string-array>
+    <string name="text_peso">Peso</string>
+    <string name="input_peso">Kg</string>
+    <string name="text_valor">Valor</string>
+    <string name="input_valor">R$</string>
+    <string name="text_descricao_produto">Descrição do produto</string>
+    <string name="input_descricao">Digite uma descrição…</string>
+    <string name="text_organico">Orgânico</string>
+    <string name="bnt_adicionar_produto">Adicionar produto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_do_produto">Nome do produto (100g)</string>
+    <string name="imagem_produto">imagem_produto</string>
+    <string name="_00_00">R$00,00</string>
+    <string name="button">Button</string>
+    <string name="btn_comprar">Comprar</string>
+</resources>
